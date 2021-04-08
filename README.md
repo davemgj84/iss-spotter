@@ -22,6 +22,8 @@
 
 - The entire app was used from the command prompt during bootcmap, whereas this app will have be created using REACT and will be experienced in the browser.
 
+- repository of original project for reference - https://github.com/davemgj84/iss_spotter
+
 ## Example data from original app's command prompt useage:
 
 `Next pass at Fri Jun 01 2021 13:01:35 GMT-0700 (Pacific Daylight Time) for 465 seconds!`
