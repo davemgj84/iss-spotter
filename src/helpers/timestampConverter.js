@@ -14,7 +14,6 @@ const addSuffix = (day) => {
 };
 
 const timestampConverter = (timestamp) => {
-  const a = new Date(timestamp * 1000);
   const months = [
     "January",
     "February",
@@ -38,6 +37,7 @@ const timestampConverter = (timestamp) => {
     "Friday",
     "Saturday",
   ];
+  const a = new Date(timestamp * 1000);
   const year = a.getFullYear();
   const month = months[a.getMonth()];
   const date = a.getDate();
