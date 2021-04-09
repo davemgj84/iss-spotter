@@ -1,0 +1,26 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  animation: loading 1s ease-in;
+  h2 {
+    font-size: 24px;
+    color: red;
+    margin-bottom: 2rem;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+  .error-message {
+    color: red;
+  }
+}
+
+@keyframes loading {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -9,11 +9,11 @@ const Times = (props) => {
     const duration = pass.duration;
     return (
       <div className="time-item" key={index}>
-        <i className="fas fa-space-shuttle"></i>
+        <i className="fas fa-satellite"></i>
         <ul className="date-time">
           <li>
-            <p> {timestampConverter(date)}</p>
-            <p>Visible for {totalTime(duration)}!</p>
+            <p>Passing {timestampConverter(date)}</p>
+            <p> for {totalTime(duration)}!</p>
           </li>
         </ul>
       </div>
@@ -24,6 +24,7 @@ const Times = (props) => {
     <div className="time-block">
       <h3>I.S.S. will be passing on...</h3>
       {passes}
+      <p className="note">Check back again later for more times!</p>
     </div>
   );
 };

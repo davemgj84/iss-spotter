@@ -1,11 +1,13 @@
 import { useState } from "react";
 import "../styles/QueryTimes.scss";
 import Times from "./Times";
+import NotFound from "./NotFound";
 
 const QueryTimes = (props) => {
   const [data, setData] = useState(null);
   const [clicked, setClicked] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [loaded, setLoaded] = useState(false);
   const [error, setError] = useState(null);
 
   const handleRequest = () => {
@@ -21,16 +23,15 @@ const QueryTimes = (props) => {
       .then((data) => {
         setData(data);
         setIsLoading(false);
+        setLoaded(true);
         setError(null);
-        console.log(data);
       })
       .catch((err) => {
         if (err.name === "AbortError") {
           console.log("Fetch aborted");
         } else {
-          setIsLoading(false);
           setError(err.message);
-          console.log(error);
+          setIsLoading(false);
         }
       });
   };
@@ -38,9 +39,14 @@ const QueryTimes = (props) => {
   return (
     <div className="query-times">
       <h2>When is the I.S.S. passing next?</h2>
-      <button className={clicked ? "clicked" : null} onClick={handleRequest}>
-        Find out!
+      <button
+        className={clicked && loaded ? "clicked-loaded" : null}
+        disabled={loaded}
+        onClick={handleRequest}
+      >
+        {clicked && loaded ? <i className="fas fa-satellite"></i> : "Find Out!"}
       </button>
+      {error && <NotFound message={error} />}
       {clicked && isLoading && (
         <div className="loading">
           <h2>
@@ -49,7 +55,7 @@ const QueryTimes = (props) => {
           </h2>
         </div>
       )}
-      {!isLoading && <Times data={data} />}
+      {loaded && <Times data={data} />}
     </div>
   );
 };
