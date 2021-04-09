@@ -25,7 +25,7 @@ const AppDescription = () => {
         during the day! (Hard to see anything then!) If this happens, you may
         have to wait until after these dates, and run another query for the next
         five. Due to so many variables at play, the API only provides a small
-        amount of times, for accuracy sake.
+        amount of data, for accuracy sake.
       </p>
     </div>
   );
