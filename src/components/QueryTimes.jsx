@@ -8,7 +8,7 @@ const QueryTimes = (props) => {
   const [error, setError] = useState(null);
 
   const handleRequest = () => {
-    const url = `http://localhost:8080/api/${props.longitude}&${props.latitude}`;
+    const url = `http://localhost:8080/api/${props.latitude}&${props.longitude}`;
     fetch(url)
       .then((res) => {
         if (!res.ok) {
