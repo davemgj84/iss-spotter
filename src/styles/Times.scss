@@ -1,20 +1,32 @@
 .time-block {
   display: flex;
   flex-direction: column;
+  animation: loading 1s ease-in;
   h3 {
     align-self: center;
-    margin: 2rem 0 2rem 0;
+    margin: 1rem 0 2rem 0;
   }
   .time-item {
     display: flex;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     .fas {
       margin-right: 1rem;
+      transform: rotate(270deg);
     }
     .date-time {
       display: flex;
       flex-direction: column;
+      list-style-type: none;
     }
+  }
+}
+
+@keyframes loading {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

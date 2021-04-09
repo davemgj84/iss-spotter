@@ -26,4 +26,45 @@
       background-color: #cccccc;
     }
   }
+  .loading {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 5rem;
+    letter-spacing: 1px;
+    font-size: 24px;
+    .fas {
+      margin-right: 1rem;
+      animation: search 3s infinite;
+    }
+    span {
+      animation: loading 0.8s infinite;
+    }
+  }
+}
+
+.clicked {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes loading {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes search {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
