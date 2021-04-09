@@ -4,10 +4,12 @@ import Times from "./Times";
 
 const QueryTimes = (props) => {
   const [data, setData] = useState(null);
+  const [clicked, setClicked] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
   const handleRequest = () => {
+    setClicked(true);
     const url = `http://localhost:8080/api/${props.latitude}&${props.longitude}`;
     fetch(url)
       .then((res) => {
@@ -36,7 +38,17 @@ const QueryTimes = (props) => {
   return (
     <div className="query-times">
       <h2>When is the I.S.S. passing next?</h2>
-      <button onClick={handleRequest}>Find out!</button>
+      <button className={clicked ? "clicked" : null} onClick={handleRequest}>
+        Find out!
+      </button>
+      {clicked && isLoading && (
+        <div className="loading">
+          <h2>
+            <i className="fas fa-satellite-dish"></i>
+            Loading<span>...</span>
+          </h2>
+        </div>
+      )}
       {!isLoading && <Times data={data} />}
     </div>
   );
