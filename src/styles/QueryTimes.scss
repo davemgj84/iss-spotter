@@ -6,4 +6,24 @@
   background: #e5e5e5;
   padding: 2rem;
   border-radius: 60px;
+  h2 {
+    font-size: 1.5rem;
+  }
+  button {
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-top: 1rem;
+    outline: none;
+    border: none;
+    appearance: none;
+    background: none;
+    background-color: #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 1px 2px black;
+    transition: 0.5s ease-in-out;
+    &:hover {
+      background-color: #cccccc;
+    }
+  }
 }
