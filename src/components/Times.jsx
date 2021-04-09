@@ -10,10 +10,12 @@ const Times = (props) => {
     return (
       <div className="time-item" key={index}>
         <i className="fas fa-space-shuttle"></i>
-        <div className="date-time">
-          <p>{timestampConverter(date)}</p>
-          <p>Visible for {totalTime(duration)}!</p>
-        </div>
+        <ul className="date-time">
+          <li>
+            <p> {timestampConverter(date)}</p>
+            <p>Visible for {totalTime(duration)}!</p>
+          </li>
+        </ul>
       </div>
     );
   });
