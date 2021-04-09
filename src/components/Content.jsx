@@ -30,7 +30,7 @@ const Content = () => {
       </h1>
       <div className="main">
         <AppDescription />
-        <QueryTimes />
+        <QueryTimes longitude={longitude} latitude={latitude} />
       </div>
     </div>
   );
