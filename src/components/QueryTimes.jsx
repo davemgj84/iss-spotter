@@ -20,6 +20,7 @@ const QueryTimes = (props) => {
         setData(data);
         setIsLoading(false);
         setError(null);
+        console.log(data);
       })
       .catch((err) => {
         if (err.name === "AbortError") {
@@ -27,6 +28,7 @@ const QueryTimes = (props) => {
         } else {
           setIsLoading(false);
           setError(err.message);
+          console.log(error);
         }
       });
   };

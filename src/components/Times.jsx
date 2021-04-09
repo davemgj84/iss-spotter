@@ -1,4 +1,5 @@
 import timestampConverter from "../helpers/timestampConverter";
+import totalTime from "../helpers/totalTime";
 import "../styles/Times.scss";
 
 const Times = (props) => {
@@ -6,11 +7,6 @@ const Times = (props) => {
     const datetime = new Date(0);
     const date = datetime.setUTCMilliseconds(pass.risetime);
     const duration = pass.duration;
-    const totalTime = (duration) => {
-      const minutes = Math.floor(duration / 60);
-      const seconds = duration % 60;
-      return `${minutes} minutes and ${seconds} seconds`;
-    };
     return (
       <div className="time-item" key={index}>
         <i className="fas fa-space-shuttle"></i>
