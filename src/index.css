@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
     url("../src/assets/milkyWayForest.jpg");
   background-size: cover;
   background-attachment: fixed;

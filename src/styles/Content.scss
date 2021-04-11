@@ -4,16 +4,36 @@
   align-items: center;
   margin: 3rem;
   padding: 2rem;
-  h1 {
-    font-family: "Orbitron", sans-serif;
-    font-size: 2rem;
-    letter-spacing: 5px;
-    color: #fff;
+  animation: fadeIn 0.8s;
+  .header {
+    display: flex;
+    img {
+      height: auto;
+      max-width: 140px;
+      margin-right: 1rem;
+      filter: brightness(800%);
+      transform: rotate(345deg);
+    }
+    h1 {
+      font-family: "Orbitron", sans-serif;
+      font-size: 2rem;
+      letter-spacing: 5px;
+      color: #fff;
+    }
   }
   .main {
     display: flex;
     justify-content: space-evenly;
     width: 75%;
     margin-top: 5rem;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

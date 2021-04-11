@@ -22,6 +22,7 @@ const QueryTimes = (props) => {
       })
       .then((data) => {
         setData(data);
+        console.log(data);
         setIsLoading(false);
         setLoaded(true);
         setError(null);
@@ -38,13 +39,13 @@ const QueryTimes = (props) => {
 
   return (
     <div className="query-times">
-      <h2>When is the I.S.S. passing next?</h2>
+      <h2>When will the ISS pass next?</h2>
       <button
         className={clicked && loaded ? "clicked-loaded" : null}
         disabled={loaded}
         onClick={handleRequest}
       >
-        {clicked && loaded ? <i className="fas fa-satellite"></i> : "Find Out!"}
+        <i className="fas fa-search"></i>Find out!
       </button>
       {error && <NotFound message={error} />}
       {clicked && isLoading && (

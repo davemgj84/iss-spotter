@@ -28,24 +28,24 @@ const timestampConverter = (timestamp) => {
     "November",
     "December",
   ];
-  // const days = [
-  //   "Sunday",
-  //   "Monday",
-  //   "Tuesday",
-  //   "Wednesday",
-  //   "Thursday",
-  //   "Friday",
-  //   "Saturday",
-  // ];
+  const days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
   const a = new Date(timestamp * 1000);
   const year = a.getFullYear();
   const month = months[a.getMonth()];
   const date = a.getDate();
-  // const day = days[a.getDay()];
+  const day = days[a.getDay()];
   const hour = a.getHours() < 10 ? `0${a.getHours()}` : a.getHours();
   const min = a.getMinutes() < 10 ? `0${a.getMinutes()}` : a.getMinutes();
   const sec = a.getSeconds() < 10 ? `0${a.getSeconds()}` : a.getSeconds();
-  const time = `${month} ${addSuffix(
+  const time = `${day}, ${month} ${addSuffix(
     date
   )}, ${year}, at ${hour}:${min}:${sec} (PT)`;
   return time;

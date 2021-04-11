@@ -1,15 +1,15 @@
 .time-block {
   display: flex;
   flex-direction: column;
-  animation: loading 1s ease-in;
+  animation: fadeIn 1s ease-in;
   h3 {
     align-self: center;
-    margin: 1rem 0 2rem 0;
+    margin: 1rem 0 1.5rem 0;
   }
   .time-item {
     display: flex;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     .fas {
       margin-right: 1rem;
     }
@@ -26,7 +26,7 @@
   }
 }
 
-@keyframes loading {
+@keyframes fadeIn {
   from {
     opacity: 0;
   }

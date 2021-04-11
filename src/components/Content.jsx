@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import "../styles/Content.scss";
 import AppDescription from "./AppDescription";
 import QueryTimes from "./QueryTimes";
+import logo from "../assets/ISS.png";
 
 const Content = () => {
   const [longitude, setLongitude] = useState(null);
@@ -25,9 +26,10 @@ const Content = () => {
 
   return (
     <div className="content">
-      <h1>
-        I.S.S. Spotter <i className="fas fa-binoculars"></i>
-      </h1>
+      <div className="header">
+        <img src={logo} alt="logo" />
+        <h1>I.S.S. SPOTTER</h1>
+      </div>
       <div className="main">
         <AppDescription />
         <QueryTimes longitude={longitude} latitude={latitude} />

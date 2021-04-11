@@ -21,7 +21,7 @@ const AppDescription = () => {
       </p>
       <p>
         It should be noted that the Open-Notify API only provides five upcoming
-        I.S.S. passes for a given query. This means that you may receive times
+        ISS passes for a given query. This means that you may receive times
         during the day! (Hard to see anything then!) If this happens, you may
         have to wait until later to run another query. Due to so many variables
         at play, the API only provides a small amount of data, for accuracy
