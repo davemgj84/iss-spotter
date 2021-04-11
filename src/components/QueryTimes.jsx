@@ -12,7 +12,7 @@ const QueryTimes = (props) => {
 
   const handleRequest = () => {
     setClicked(true);
-    const url = `http://localhost:8080/api/${props.latitude}&${props.longitude}`;
+    const url = `http://localhost:8080/api/passtimes?lat=${props.latitude}&long=${props.longitude}`;
     fetch(url)
       .then((res) => {
         if (!res.ok) {
@@ -22,7 +22,6 @@ const QueryTimes = (props) => {
       })
       .then((data) => {
         setData(data);
-        console.log(data);
         setIsLoading(false);
         setLoaded(true);
         setError(null);
