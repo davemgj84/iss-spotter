@@ -24,7 +24,7 @@
 
 - The original project was create for and used from the command prompt.
 
-- Repository of original project for reference - https://github.com/davemgj84/iss_spotter
+- Repository of original project for reference - https://github.com/davemgj84/iss_spotter - Please keep in mind I was only in week 2 of boot camp when this was created! 😂
 
 ## Location of deployed application
 
