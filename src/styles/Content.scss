@@ -5,26 +5,11 @@
   margin: 3rem;
   padding: 2rem;
   animation: fadeIn 0.8s;
-  .header {
-    display: flex;
-    img {
-      height: auto;
-      max-width: 140px;
-      margin-right: 1rem;
-      transform: rotate(345deg);
-    }
-    h1 {
-      font-family: "Orbitron", sans-serif;
-      font-size: 2rem;
-      letter-spacing: 5px;
-      color: #fff;
-    }
-  }
   .main {
     display: flex;
     justify-content: space-evenly;
     width: 75%;
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
 }
 
