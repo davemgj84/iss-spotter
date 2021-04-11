@@ -29,3 +29,7 @@
 ## Example data from original app's command prompt useage:
 
 `Next pass at Fri Jun 01 2021 13:01:35 GMT-0700 (Pacific Daylight Time) for 465 seconds!`
+
+## Screenshots from updated version - (WIP)
+
+![Iss Spotter]()
