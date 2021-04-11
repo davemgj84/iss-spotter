@@ -22,7 +22,7 @@ const Times = (props) => {
 
   return (
     <div className="time-block">
-      <h3>The next five passes are . . .</h3>
+      <h3>The Space Station will pass on...</h3>
       {passes}
       <p className="note">Check back later for more times!</p>
     </div>

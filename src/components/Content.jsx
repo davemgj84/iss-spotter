@@ -1,12 +1,14 @@
 import { useState, useEffect } from "react";
 import "../styles/Content.scss";
 import Header from "./Header";
+import InfoBox from "./InfoBox";
 import AppDescription from "./AppDescription";
 import QueryTimes from "./QueryTimes";
 
 const Content = () => {
   const [latitude, setLatitude] = useState(null);
   const [longitude, setLongitude] = useState(null);
+  const [show, setShow] = useState(false);
 
   useEffect(() => {
     if ("geolocation" in navigator) {
@@ -22,13 +24,14 @@ const Content = () => {
     } else {
       console.log("Position Not Available");
     }
-  });
+  }, [latitude, longitude]);
 
   return (
     <div className="content">
       <Header />
       <div className="main">
-        <AppDescription />
+        <InfoBox show={show} setShow={setShow} />
+        <AppDescription show={show} setShow={setShow} />
         <QueryTimes latitude={latitude} longitude={longitude} />
       </div>
     </div>

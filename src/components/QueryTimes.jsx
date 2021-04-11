@@ -17,7 +17,7 @@ const QueryTimes = (props) => {
         disabled={loaded}
         onClick={handleRequest}
       >
-        <i className="fas fa-search"></i>Find out!
+        <i className="fas fa-satellite-dish"></i>Find out!
       </button>
       {error && <NotFound message={error} />}
       {clicked && isLoading && (
