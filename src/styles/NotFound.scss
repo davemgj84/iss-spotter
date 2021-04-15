@@ -17,6 +17,12 @@
   .error-message {
     color: #ff0033;
     transition: 0.3s ease-in-out;
+    margin-left: 1rem;
+    .fas {
+      margin-right: 1rem;
+      font-size: 20px;
+      transition: 0.3s ease-in-out;
+    }
   }
 }
 
