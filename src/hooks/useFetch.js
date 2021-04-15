@@ -10,7 +10,7 @@ const useFetch = (lat, long) => {
   const handleRequest = () => {
     if (lat && long) {
       setClicked(true);
-      const url = `http://localhost:8080/api/passtimes?lat=${lat}&long=${long}`;
+      const url = `https://iss-spotter.herokuapp.com/api/passtimes?lat=${lat}&long=${long}`;
       fetch(url)
         .then((res) => {
           if (!res.ok) {
