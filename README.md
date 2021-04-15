@@ -30,7 +30,7 @@
 
 - The application is deployed via Netlify and can be visited here:
 
-  - to be determined - not yet deployed
+  - https://iss-spotter.netlify.app/
 
 ## Instructions to run locally
 
