@@ -1,0 +1,21 @@
+@media screen and (max-width: 1440px) {
+  .info {
+    h2 {
+      font-size: 18px;
+    }
+    .fas {
+      font-size: 22px;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .info {
+    h2 {
+      font-size: 16px;
+    }
+    .fas {
+      font-size: 20px;
+    }
+  }
+}

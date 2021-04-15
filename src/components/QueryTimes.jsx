@@ -1,4 +1,5 @@
 import "../styles/QueryTimes.scss";
+import "../styles/responsive/QueryTimes-Responsive.scss";
 import useFetch from "../hooks/useFetch";
 import Times from "./Times";
 import NotFound from "./NotFound";

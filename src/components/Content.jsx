@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "../styles/Content.scss";
+import "../styles/responsive/Content-Responsive.scss";
 import Header from "./Header";
 import InfoBox from "./InfoBox";
 import AppDescription from "./AppDescription";

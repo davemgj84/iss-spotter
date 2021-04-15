@@ -1,4 +1,5 @@
 import "../styles/NotFound.scss";
+import "../styles/responsive/NotFound-Responsive.scss";
 
 const NotFound = (props) => {
   return (

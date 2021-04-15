@@ -1,5 +1,6 @@
 import logo from "../assets/ISS.png";
 import "../styles/Header.scss";
+import "../styles/responsive/Header-Responsive.scss";
 
 const Header = () => {
   return (

@@ -1,6 +1,7 @@
 import timestampConverter from "../helpers/timestampConverter";
 import totalTime from "../helpers/totalTime";
 import "../styles/Times.scss";
+import "../styles/responsive/Times-Responsive.scss";
 
 const Times = (props) => {
   const passes = props.data.map((pass, index) => {

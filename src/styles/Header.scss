@@ -5,11 +5,13 @@
     max-width: 140px;
     margin-right: 1rem;
     transform: rotate(345deg);
+    transition: ease-in-out 0.3s;
   }
   h1 {
     font-family: "Orbitron", sans-serif;
     font-size: 2rem;
     letter-spacing: 5px;
     color: #fff;
+    transition: ease-in-out 0.3s;
   }
 }

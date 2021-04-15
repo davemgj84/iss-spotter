@@ -1,0 +1,29 @@
+@media screen and (max-width: 1440px) {
+  .description-container {
+    width: 390px;
+    height: 540px;
+    .description {
+      h2 {
+        font-size: 18px;
+      }
+    }
+    button {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .description-container {
+    height: 500px;
+    .description {
+      h2 {
+        font-size: 16px;
+      }
+    }
+    button {
+      padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+      border-radius: 15px;
+    }
+  }
+}

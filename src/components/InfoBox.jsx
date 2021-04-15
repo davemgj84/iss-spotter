@@ -1,4 +1,5 @@
 import "../styles/InfoBox.scss";
+import "../styles/responsive/InfoBox-Responsive.scss";
 
 const InfoBox = (props) => {
   if (!props.show) {

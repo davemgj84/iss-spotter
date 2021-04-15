@@ -1,4 +1,5 @@
 import "../styles/AppDescription.scss";
+import "../styles/responsive/AppDescription-Responsive.scss";
 
 const AppDescription = (props) => {
   if (props.show) {

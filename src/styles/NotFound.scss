@@ -3,16 +3,20 @@
   flex-direction: column;
   margin-top: 2rem;
   animation: loading 1s ease-in;
+  transition: 0.3s ease-in-out;
   h2 {
     font-size: 24px;
     color: #ff0033;
     margin-bottom: 1rem;
+    transition: 0.3s ease-in-out;
   }
   p {
     margin-bottom: 1rem;
+    transition: 0.3s ease-in-out;
   }
   .error-message {
     color: #ff0033;
+    transition: 0.3s ease-in-out;
   }
 }
 
