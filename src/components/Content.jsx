@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import "../styles/Content.scss";
 import "../styles/responsive/Content-Responsive.scss";
 import Header from "./Header";
-import InfoBox from "./InfoBox";
 import AppDescription from "./AppDescription";
 import QueryTimes from "./QueryTimes";
 
@@ -31,9 +30,13 @@ const Content = () => {
     <div className="content">
       <Header />
       <div className="main">
-        <InfoBox show={show} setShow={setShow} />
         <AppDescription show={show} setShow={setShow} />
-        <QueryTimes latitude={latitude} longitude={longitude} />
+        <QueryTimes
+          latitude={latitude}
+          longitude={longitude}
+          show={show}
+          setShow={setShow}
+        />
       </div>
     </div>
   );

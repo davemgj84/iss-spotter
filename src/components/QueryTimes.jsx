@@ -30,6 +30,15 @@ const QueryTimes = (props) => {
         </div>
       )}
       {loaded && <Times data={data} />}
+      <div className="info">
+        <p>
+          About
+          <i
+            onClick={() => props.setShow(true)}
+            className="fas fa-info-circle"
+          ></i>
+        </p>
+      </div>
     </div>
   );
 };
