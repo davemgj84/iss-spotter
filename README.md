@@ -38,7 +38,9 @@
 
 - Once dependencies have been installed, and you may simply run `npm start` to open the application locally on your browser, via `Port 3000`.
 
-- You will also have to fork the iss-api repository (https://github.com/davemgj84/iss-api). This will allow you to connect to the backend server for this application. Once the backend is setup (instructions are on that repository)m you can then find out the next availble times to potentiall see the ISS pass over head!
+- This app is connected to a Heroku API - My repository for it is located here:
+
+  - https://github.com/davemgj84/iss-api
 
 ## Dependencies Include:
 
