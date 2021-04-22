@@ -38,14 +38,21 @@
 
 - Once dependencies have been installed, and you may simply run `npm start` to open the application locally on your browser, via `Port 3000`.
 
-- This app is connected to a Heroku API - My repository for it is located here:
+- This app is connected to a Heroku API
 
-  - https://github.com/davemgj84/iss-api
+- My repository for the backend is located here: https://github.com/davemgj84/iss-api
 
-## Dependencies Include:
+## Frontend Dependencies Include:
 
 - React - ^17.0.1
 - Node-sass - ^4.14.1
+
+## Backend Dependencies Include:
+
+- Node - ^10.16.1
+- Express - ^4.17.1
+- Cors - ^2.8.5
+- Axios - ^0.21.1
 
 ## Screenshots - (WIP)
 
