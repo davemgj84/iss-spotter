@@ -1,4 +1,10 @@
-# I.S.S. - Spotter (Work in progress....)
+# I.S.S. - Spotter
+
+## NOTE
+
+- Unfortunately the open-notify API is no longer supported and no longer provides the ISS data required for this application.
+- More details on the API Docs here: http://open-notify.org/Open-Notify-API/ISS-Pass-Times/
+- I decided to leave the details for the application below for posterity reasons, but this application is no longer working.
 
 ## About
 
@@ -44,8 +50,8 @@
 
 ## Frontend Dependencies Include:
 
-- React - ^17.0.1
-- Node-sass - ^4.14.1
+- React - ^18.2.0
+- Sass - ^1.69.7
 
 ## Backend Dependencies Include:
 

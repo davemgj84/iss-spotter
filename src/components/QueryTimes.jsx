@@ -15,12 +15,28 @@ const QueryTimes = (props) => {
       <h2>When will the ISS pass next?</h2>
       <button
         className={loaded ? "loaded" : null}
-        disabled={loaded}
+        disabled={true}
         onClick={handleRequest}
       >
         <i className="fas fa-satellite-dish"></i>Find out!
       </button>
       {error && <NotFound message={error} />}
+      <div className="loading">
+        <div>
+          Unfortunately the open-notify API is no longer supported and no longer
+          provides the ISS data required for this application.
+          <div style={{ marginTop: 16 }}>
+            More details on the API Docs here:{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="http://open-notify.org/Open-Notify-API/ISS-Pass-Times/"
+            >
+              Open-Notify
+            </a>
+          </div>
+        </div>
+      </div>
       {clicked && isLoading && (
         <div className="loading">
           <h2>
